@@ -9,6 +9,86 @@
   <body>
     <table style="width: 100%; height: 100%">
       <!-- Your code here -->
+		 table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+    <table>
+        <thead>
+            <tr>
+                <th>Main Header 1</th>
+                <th>Main Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sub Header 1</th>
+                                <th>Sub Header 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sub Data 1</td>
+                                <td>
+                                    <ul>
+                                        <li>Item A</li>
+                                        <li>Item B</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sub Data 2</td>
+                                <td>
+                                    <ul>
+                                        <li>Item C</li>
+                                        <li>Item D</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Another Sub Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Nested List 1</li>
+                                        <li>Nested List 2</li>
+                                        <li>Nested List 3</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Main Footer Content</td>
+            </tr>
+        </tbody>
     </table>
   </body>
 </html>
